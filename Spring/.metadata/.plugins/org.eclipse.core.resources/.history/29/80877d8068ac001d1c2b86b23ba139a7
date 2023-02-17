@@ -1,0 +1,23 @@
+package com.springrest.springrest.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.springrest.springrest.model.Course;
+
+public class CourseServiceImpl implements CourseService {
+
+	List<Course> list;
+	
+	public CourseServiceImpl() {
+		list = new ArrayList<>();
+		list.add(new Course(145,"Core Java Course","This core contains basics of java"));
+		list.add(new Course(111,"React","Learning reactJs from basics"));
+	}
+	@Override
+	public List<Course> getCourses() {
+		// TODO Auto-generated method stub
+		return list;
+	}
+
+}
